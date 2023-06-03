@@ -5,7 +5,7 @@ import config from 'config'
 import {ogg} from './ogg.js'
 import {openai} from './openia.js'
 
-console.log(config.get('TEST_ENV'))
+console.log(config.get('NODE_ENV'))
 
 const bot = new Telegraf(config.get('TELEGRAM_TOKEN'))
 
